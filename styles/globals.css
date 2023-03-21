@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Operator";
+  src: url("./../public/fonts/Operator.otf");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anderson";
+  src: url("./../public/fonts/Anderson.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./../public/fonts/Ubuntu.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Masonry Section */
+@layer utilities {
+  @variants responsive {
+    .masonry {
+      column-gap: 1.5em;
+      column-count: 2;
+    }
+    .masonry-md {
+      column-gap: 1.5em;
+      column-count: 3;
+    }
+    .masonry-lg {
+      column-gap: 1.5em;
+      column-count: 6;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
